@@ -43,20 +43,24 @@ public class ControllerGioHang extends HttpServlet {
                 String id = request.getParameter("maSach");
                 SachDAO da = new SachDAO();
                 Sach s = da.ChiTietSachByID(request.getParameter("maSach"));
-                if(gh != null){               
+                //Nếu mã sách khác null( người dùng muốn thêm giỏ hàng) thì thực hiện thêm giỏ hàng
+                if(s != null){
+                    if(gh != null){               
                     gh.ThemSach(s);
                     session.setAttribute("giohang", gh);
+                    }
+                    else{
+                        gh = new GioHang();
+                        gh.ThemSach(s);
+                        session.setAttribute("giohang", gh);
+                    }
+                    
                 }
-                else{
-                    gh = new GioHang();
-                    gh.ThemSach(s);
-                    session.setAttribute("giohang", gh);
-                }
+                //Trả về thông tin giỏ hàng
                 request.setAttribute("giohang", session.getAttribute("giohang"));
                 RequestDispatcher rd = request.getRequestDispatcher("checkout.jsp");
-                rd.forward(request, response);
-            }
-            
+                rd.forward(request, response);  
+            }        
         }
         catch(Exception e){
             

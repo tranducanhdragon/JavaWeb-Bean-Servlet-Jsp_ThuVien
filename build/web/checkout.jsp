@@ -46,7 +46,7 @@
                             </a>
                         </li>
                         <li class="btn btn2">
-                            <a href="shop.jsp">Product Catalogue</a>
+                            <a href="shop.jsp">Thư Viện</a>
                         </li>
                         <li class="btn btn4">
                             <a href="checkout.jsp">Checkout</a>
@@ -66,8 +66,8 @@
                     </h4>
 
                     <div class="checkout-right">
-                        <h4>Your shopping cart contains:
-                            <span>3 Products</span>
+                        <h4>Giỏ hàng của bạn:
+                            <span></span>
                         </h4>
                         <table class="timetable_sub table-responsive">
                             <thead>
@@ -143,45 +143,39 @@
                             </ul>
                         </div>
                         <div class="col-md-8 address_form">
-                            <h4>Billing Address</h4>
-                            <form action="payment.jsp" method="post" class="creditly-card-form shopf-sear-headinfo_form">
+                            <h4>Phiếu Mượn</h4>
+                            <form action="ControllerThanhToan" method="post" class="creditly-card-form shopf-sear-headinfo_form">
                                 <div class="creditly-wrapper wrapper">
                                     <div class="information-wrapper">
                                         <div class="first-row form-group">
+                                            
                                             <div class="controls">
-                                                <label class="control-label">Full name: </label>
-                                                <input class="billing-address-name form-control" type="text" name="name" placeholder="Full name">
+                                                <label class="control-label">Họ Tên: </label>
+                                                <input class="billing-address-name form-control" type="text" name="name" placeholder="Họ Tên">
                                             </div>
                                             <div class="card_number_grids">
                                                 <div class="card_number_grid_left">
                                                     <div class="controls">
-                                                        <label class="control-label">Mobile number:</label>
-                                                        <input class="form-control" type="text" placeholder="Mobile number">
+                                                        <label class="control-label">Số Điện Thoại:</label>
+                                                        <input class="form-control" type="text" name="phone" placeholder="Số Điện Thoại">
                                                     </div>
                                                 </div>
                                                 <div class="card_number_grid_right">
                                                     <div class="controls">
-                                                        <label class="control-label">Landmark: </label>
-                                                        <input class="form-control" type="text" placeholder="Landmark">
+                                                        <label class="control-label">Địa Chỉ: </label>
+                                                        <input class="form-control" type="text" name="address" placeholder="Địa Chỉ">
                                                     </div>
                                                 </div>
                                                 <div class="clear"> </div>
                                             </div>
+                                            <!--
                                             <div class="controls">
                                                 <label class="control-label">Town/City: </label>
                                                 <input class="form-control" type="text" placeholder="Town/City">
                                             </div>
-                                            <div class="controls">
-                                                <label class="control-label">Address type: </label>
-                                                <select class="form-control option-fieldf">
-                                                    <option>Office</option>
-                                                    <option>Home</option>
-                                                    <option>Commercial</option>
-
-                                                </select>
-                                            </div>
+                                            -->
                                         </div>
-                                        <button class="submit check_out">place order</button>
+                                        <button class="submit check_out" type="submit">Gửi</button>
                                     </div>
                                 </div>
                             </form>

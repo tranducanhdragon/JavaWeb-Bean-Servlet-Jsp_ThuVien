@@ -20,17 +20,18 @@ public class GioHang {
         giohang = new ArrayList<Sach>();
     }
     public void ThemSach(Sach s) {
-
-        if (giohang.contains(s)) {
-
-            s = giohang.get(giohang.indexOf(s));
-
-            s.setSoluong(s.getSoluong() + s.getSoluong());
-
-        } else {
-            giohang.add(s);
+        if(!giohang.isEmpty()){
+            for(int i = 0; i < giohang.size(); i++){
+                if (giohang.get(i).getMaSach().equals(s.getMaSach())) {
+                    s = giohang.get(i);
+                    s.setSoluong(s.getSoluong()+1);
+                    return;
+                }            
+            }           
         }
-
+        s.setSoluong(1);
+        giohang.add(s);
+        
     }
     public Sach LaySach(int i) {
         if (i < 0 || i > giohang.size() - 1) {

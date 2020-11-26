@@ -35,36 +35,38 @@
                                 <a class="page-scroll" href="#page-top"></a>
                             </li>
                             <li>
-                                <a href="index.jsp">Home</a>
+                                <a href="index.jsp">Trang Chủ</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">shop
+                                <a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">Thư Viện
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="/JavaWeb-ThuVien/ControllerSach">product catalog</a>
+                                        <a href="/JavaWeb-ThuVien/ControllerSach">Sách</a>
                                     </li>
                                     <li>
-                                        <a href="checkout.jsp">checkout</a>
+                                        <a href="/JavaWeb-ThuVien/ControllerGioHang">Giỏ Hàng</a>
                                     </li>
-									<li>
-                                        <a href="payment.jsp">Payment</a>
+                                    <li>
+                                        <a href="payment.jsp">Hóa Đơn</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="contact.jsp">Contact us</a>
+                                <a href="contact.jsp">Liên Hệ</a>
                             </li>
-                            <li>
-                                <a href="login.jsp" title="SignIn & SignUp">
-                                    <span class="fa fa-user nav-icon" aria-hidden="true"></span>
-                                </a>
-                            </li>
+                            
                             <% if(session.getAttribute("userSession") != null){%>
                             <li>
                                 <a href="ControllerLogout">
-                                    Logout
+                                    Đăng Xuất
+                                </a>
+                            </li>
+                            <%}else{%>
+                            <li>
+                                <a href="login.jsp" title="SignIn & SignUp">
+                                    <span class="fa fa-user nav-icon" aria-hidden="true"></span>
                                 </a>
                             </li>
                             <%}%>
@@ -89,6 +91,7 @@
                         </div>
                         <!-- //search-bar ends here -->
                         <!-- shopping cart -->
+                        <!--
                         <div class="cart-mainf">
                             <div class="chrcart chrcart2 cart cart box_1">
                                 <form action="#" method="post" class="last">
@@ -100,7 +103,7 @@
                                 </form>
                             </div>
                         </div>
-                        <!-- //shopping cart ends here -->
+                        <!-- //shopping cart ends here -->                        
                     </div>
                     <!-- /.navbar-collapse -->
                     <div class="clearfix"></div>

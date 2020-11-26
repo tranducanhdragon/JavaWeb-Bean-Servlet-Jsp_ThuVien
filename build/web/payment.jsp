@@ -44,7 +44,7 @@
                                                     </a>
 						</li>
 						<li class="btn btn2">
-							<a href="shop.jsp">Product Catalogue</a>
+							<a href="shop.jsp">Thư Viện</a>
 						</li>
 						<li class="btn btn4 btn4a">
 							<a href="checkout.jsp">Checkout</a>

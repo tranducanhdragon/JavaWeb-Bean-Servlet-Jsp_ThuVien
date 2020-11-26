@@ -24,6 +24,10 @@
         <servlet-name>ControllerDeleteSachByIDGioHang</servlet-name>
         <servlet-class>Servlet.ControllerDeleteSachByIDGioHang</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ControllerThanhToan</servlet-name>
+        <servlet-class>Servlet.ControllerThanhToan</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ControllerLogin</servlet-name>
         <url-pattern>/ControllerLogin</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>ControllerDeleteSachByIDGioHang</servlet-name>
         <url-pattern>/ControllerDeleteSachByIDGioHang</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerThanhToan</servlet-name>
+        <url-pattern>/ControllerThanhToan</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
