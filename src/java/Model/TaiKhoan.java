@@ -13,6 +13,7 @@ public class TaiKhoan {
     private int maTaiKhoan;
     private String tenDangNhap;
     private String matKhau;
+
     public TaiKhoan(){};
 
     public TaiKhoan(String TenDangNhap, String MatKhau, int MaTaiKhoan) {

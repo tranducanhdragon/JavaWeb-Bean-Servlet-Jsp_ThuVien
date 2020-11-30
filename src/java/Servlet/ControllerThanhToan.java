@@ -6,6 +6,8 @@
 package Servlet;
 
 import DAO.SachDAO;
+import DAO.TheThuVienDAO;
+import Model.GioHang;
 import Model.Sach;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -16,6 +18,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -37,10 +40,17 @@ public class ControllerThanhToan extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try {
             Enumeration para = request.getParameterNames();
+            HttpSession session = request.getSession();
+            GioHang gh = (GioHang)session.getAttribute("giohang");
+            
             String hoten = request.getParameter("name");
+            String idthe = request.getParameter("idthe");
+            gh.setIdThe(idthe);
             String sdt = request.getParameter("phone");
-            String diachi = request.getParameter("address");
-            //Thêm thông tin độc giả và thông tin giỏ hàng của độc giả đó
+            //Insert thông tin độc giả và thông tin giỏ hàng của độc giả đó vào bảng Muon
+            for(int i = 0; i< gh.soSach(); i++){
+                new TheThuVienDAO().insertToMuon(idthe, gh.LaySach(i).getMaSach() , gh.LaySach(i).getSoluong());
+            }
             
             //Quay lại trang shop.jsp
             List<Sach> s = new SachDAO().getListSach();           

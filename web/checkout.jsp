@@ -153,17 +153,15 @@
                                                 <label class="control-label">Họ Tên: </label>
                                                 <input class="billing-address-name form-control" type="text" name="name" placeholder="Họ Tên">
                                             </div>
+                                            <div class="controls">
+                                                <label class="control-label">Mã Thẻ Thư Viện: </label>
+                                                <input class="billing-address-name form-control" type="text" name="idthe" placeholder="Mã Thẻ">
+                                            </div>
                                             <div class="card_number_grids">
                                                 <div class="card_number_grid_left">
                                                     <div class="controls">
                                                         <label class="control-label">Số Điện Thoại:</label>
                                                         <input class="form-control" type="text" name="phone" placeholder="Số Điện Thoại">
-                                                    </div>
-                                                </div>
-                                                <div class="card_number_grid_right">
-                                                    <div class="controls">
-                                                        <label class="control-label">Địa Chỉ: </label>
-                                                        <input class="form-control" type="text" name="address" placeholder="Địa Chỉ">
                                                     </div>
                                                 </div>
                                                 <div class="clear"> </div>

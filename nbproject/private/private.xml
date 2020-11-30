@@ -3,19 +3,25 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/JavaProject/JavaWeb-ThuVien/src/java/DAO/TheThuVienDAO.java</file>
             <file>file:/D:/JavaProject/JavaWeb-ThuVien/web/checkout.jsp</file>
+            <file>file:/D:/JavaProject/JavaWeb-ThuVien/src/java/Model/Sach.java</file>
+            <file>file:/D:/JavaProject/JavaWeb-ThuVien/src/java/Model/Muon.java</file>
             <file>file:/D:/JavaProject/JavaWeb-ThuVien/src/java/Servlet/ControllerThanhToan.java</file>
             <file>file:/D:/JavaProject/JavaWeb-ThuVien/web/single-product.jsp</file>
             <file>file:/D:/JavaProject/JavaWeb-ThuVien/src/java/Servlet/ControllerSach.java</file>
+            <file>file:/D:/JavaProject/JavaWeb-ThuVien/src/java/DAO/TaiKhoanDAO.java</file>
             <file>file:/D:/JavaProject/JavaWeb-ThuVien/src/java/Servlet/ControllerLogin.java</file>
             <file>file:/D:/JavaProject/JavaWeb-ThuVien/src/java/Servlet/ControllerDeleteSachByIDGioHang.java</file>
             <file>file:/D:/JavaProject/JavaWeb-ThuVien/src/java/Model/DocGia.java</file>
             <file>file:/D:/JavaProject/JavaWeb-ThuVien/web/navbar.jsp</file>
+            <file>file:/D:/JavaProject/JavaWeb-ThuVien/src/java/DAO/SachDAO.java</file>
             <file>file:/D:/JavaProject/JavaWeb-ThuVien/src/java/Model/GioHang.java</file>
             <file>file:/D:/JavaProject/JavaWeb-ThuVien/src/java/Servlet/ControllerGioHang.java</file>
             <file>file:/D:/JavaProject/JavaWeb-ThuVien/web/login.jsp</file>
             <file>file:/D:/JavaProject/JavaWeb-ThuVien/web/index.jsp</file>
             <file>file:/D:/JavaProject/JavaWeb-ThuVien/src/java/Model/TaiKhoan.java</file>
+            <file>file:/D:/JavaProject/JavaWeb-ThuVien/web/payment.jsp</file>
         </group>
     </open-files>
 </project-private>

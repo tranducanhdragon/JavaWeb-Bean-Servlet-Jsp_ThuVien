@@ -14,10 +14,19 @@ import java.util.ArrayList;
 
 public class GioHang {
 
+    private String idThe;
     private ArrayList<Sach> giohang;
 
     public GioHang() {
         giohang = new ArrayList<Sach>();
+    }
+
+    public String getIdThe() {
+        return idThe;
+    }
+
+    public void setIdThe(String idThe) {
+        this.idThe = idThe;
     }
     public void ThemSach(Sach s) {
         if(!giohang.isEmpty()){

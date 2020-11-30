@@ -7,6 +7,7 @@ package Servlet;
 
 import Model.GioHang;
 import Model.Sach;
+import DAO.TheThuVienDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -43,7 +44,10 @@ public class ControllerDeleteSachByIDGioHang extends HttpServlet {
                 HttpSession session = request.getSession();
                 GioHang gh = (GioHang)session.getAttribute("giohang");
                 if(gh != null){
+                    //Xóa trong session
                     gh.XoaSach(id);
+                    //Xóa trong db
+                    new TheThuVienDAO().deleteFromMuon(gh.getIdThe(), id);
                 }
                 //Về trang checkout
                 request.setAttribute("giohang", session.getAttribute("giohang"));
